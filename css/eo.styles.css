@@ -1,0 +1,82 @@
+#main {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 2em auto;
+    padding: 1em 0; 
+    max-width: 1024px; 
+}
+
+#eingabe {
+    display: flex; 
+    margin: 1.5em auto; 
+    justify-content: space-evenly;
+    width: 80%; 
+}
+
+#ausgabe {
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+    font-size: 2em; 
+    font-weight: 700; 
+    margin: auto; 
+    text-align: center;
+}
+
+.textInput {
+    height: 2.5em; 
+    font-size: 1.2em;
+    font-weight: 700; 
+    text-align: center;
+    margin: 0 .3em;
+    width: 48%; 
+}
+
+#go {
+    width: 250px; 
+    height: 200px; 
+    font-size: 1.5em;
+    font-weight: 700; 
+
+}
+
+h1 {
+    margin: 1em auto; 
+    width: 100%; 
+    margin-bottom: 1em; 
+    text-align: center;
+    font-weight: 600; 
+}
+
+#button {
+    margin: 1em auto; 
+    display: flex; 
+    width: 80%; 
+    justify-content: center;
+}
+
+#divAus {
+    display: flex; 
+    width: 100%; 
+    justify-items: center; 
+    margin: auto; 
+}
+
+#seed {
+    font-size: 18px;
+    margin: auto; 
+    margin-top: 12px; 
+}
+
+body {
+    text-align: center;
+}
+
+#mainurl {
+    color: #ccc; 
+    font-size: 12px;
+}
+
+.link {
+    font-family: 'Courier New', Courier, monospace;
+}
