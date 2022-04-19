@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param id string
+ * @returns HTMLElement
+ */
 const _e = function( id: string ) {
     return document.getElementById( id ); 
 }

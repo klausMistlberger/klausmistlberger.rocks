@@ -8,32 +8,51 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="lib/myLib.js" defer></script>
     <script src="js/menu.js" defer></script>
+    <script src="js/script.js" defer></script>
 
 </head>
 <body>
     <nav id="navbar">
-        <button class="link">main</button>
+        <button class="link nav-content">main</button>
         <div class="dropdown" data-dropdown>
             <button class="link" data-dropdown-button>projects</button>
             <div class="dropdown-menu">
-                <div id="photografy">photografy</div>
-                <div id="entwederoder">entweder-oder</div>
-                <div id="geocaching">geocaching tool</div>
+                <div id="dD-photografy" class="dropdown-bullet">photografy</div>
+                <div id="dD-entwederoder" class="dropdown-bullet">entweder-oder</div>
+                <div id="dD-geocaching" class="dropdown-bullet">geocaching tool</div>
             </div>
         </div>
-        <button class="link">about</button>
+        <button class="link nav-content">about</button>
     </nav>
-    <div id="main">
-        <h1>Welcome to Klaus Mistlberger</h1>
+    <div id="main" class="content selected">
+        <!-- <h1>Welcome to Klaus Mistlberger</h1> -->
+        <h1>Looking for a web developer?</h1>
         <img src="img/Portraitfoto.jpg" id="imgmbk">
-        <h2>Looking for a web developer?</h2> 
+        <!-- <h2>Looking for a web developer?</h2>  -->
         <!-- <h2>Look no further!</h2> -->
         <p>My name is Klaus Mistlberger, I'm an aspiring Software Engineer with a clear focus on JavaScript and NodeJS.</p>
         <p>I've been studying media technology at the University of applied Sciences in St. Pölten. During my studies I was fascinated by modern technologies and I've always been working with visual programming languages like MAX/MSP and VVVV but also learning JavaScript and a bit of Java.</p>
-        <!-- <iframe src="entweder-oder.html" frameborder="1"></iframe> -->
     </div>
-    <div id="projects"></div>
-    <div id="about">
+
+    <div id="projects" class="project-list">
+        <div id="photografy" class="content-element">
+            <h2>photografy</h2>
+            <p>photografy</p>
+        </div>
+        <div id="entwederoder" class="content-element">
+            <h2>entweder-oder generator</h2>
+            <p>entweder oder</p>
+        </div>
+        <div id="geocaching" class="content-element">
+            <h2>geocaching translator</h2>
+            <p>geocaching</p>
+        </div>
+        <!-- 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid laboriosam fugiat perspiciatis expedita iure eaque consequuntur velit possimus eligendi inventore maxime optio, enim dolores molestiae rerum distinctio a odit!</p>
+        -->
+    </div>
+
+    <div id="about" class="content">
         <h1>Contact</h1>
         <form action="">
             
