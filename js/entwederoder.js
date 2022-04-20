@@ -1,29 +1,25 @@
-let ausgabe = _e( 'ausgabe' );
+const ausgabe = $( '#ausgabe' );
 
-let eitherOr = ()=>{
+const eitherOr = ()=>{
     // Einlesen
-    let entweder = _e( 'entweder' ).value;
-    let oder = _e( 'oder' ).value;
+    let _entweder = $( '#entweder' ).val();
+    let _oder = $( '#oder' ).val();
 
-    // Seed erzeugen + Ausgabe erzeugen
+    // Seed + Ausgabe erzeugen
     let seedNum = rndNum(0, 100);
-    seedNum === 0 ? ausgabe.innerHTML = 'Keine Ahnung, wirf eine Münze' : 
-    ( seedNum % 2 === 1 ? ausgabe.innerHTML = '[&nbsp;&nbsp; &gt; &gt; &nbsp;&nbsp;' + entweder + '&nbsp;&nbsp; &lt; &lt; &nbsp;&nbsp;]' : ausgabe.innerHTML = '[&nbsp;&nbsp; &gt; &gt; &nbsp;&nbsp;' + oder + '&nbsp;&nbsp; &lt; &lt; &nbsp;&nbsp;]' );
-    
-    let seed = document.createElement( 'div' );
-    seed.id = 'seed';
-    seed.innerHTML = 'Seed: ' + seedNum;
-    // ausgabe.appendChild (seed);
-}
+    const output = ( output ) => '[&nbsp;&nbsp; &gt; &gt; &nbsp;&nbsp;' + output + '&nbsp;&nbsp; &lt; &lt; &nbsp;&nbsp;]';
+    seedNum === 0 ? ausgabe.html( 'Keine Ahnung, wirf eine Münze' ) : ( seedNum % 2 === 1 ? ausgabe.html( output( _entweder ) ) : ausgabe.html( output( _oder) ) );
+};
 
+// Enter-Key
 $( 'body' ).on( 'keyup', (e)=>{
     if ( e.keyCode === 13) {
         eitherOr();
     }
-} );
+});
 
-
-let go = $( '#go' ).on( 'click', ()=>{
+// Click
+$( '#go' ).on( 'click', ()=>{
     eitherOr();
-} );
+});
         

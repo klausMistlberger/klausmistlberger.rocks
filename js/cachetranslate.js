@@ -29,8 +29,6 @@ const convert = () => {
 }
 
 $( '#translate' ).on( 'click', convert );
-$( 'body' ).on( 'keyup', (e)=>{
-    if ( e.keyCode === 13) {
-        convert();
-    }
+$( 'body' ).on( 'keyup', ev => {
+    if ( ev.keyCode === 13) convert();
 });

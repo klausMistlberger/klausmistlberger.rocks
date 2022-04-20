@@ -65,7 +65,7 @@ p {
     width: 160px;
     height: auto;
     margin: 0 0 1em 10vw;
-    border: 2px solid var(--color1);
+    border: 3px solid var(--color1);
     /* left: 20vw; */
 }
 
@@ -167,12 +167,15 @@ p {
 
 #main {
     opacity: 1;
+    display: flex;
 }
 
 #projects {
     opacity: 0;
+    display: none;
 }
 
 #about {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
 }
