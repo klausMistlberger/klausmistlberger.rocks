@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaus Mistlberger</title>
+    <!-- <link rel="stylesheet" href="lib/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery-3.6.0.min.js" defer></script>
     <script src="lib/myLib.js" defer></script>
     <script src="js/menu.js" defer></script>
+    <script src="js/cachetranslate.js" defer></script>
     <script src="js/script.js" defer></script>
 
 </head>
@@ -22,16 +25,16 @@
                 <div id="dD-geocaching" class="dropdown-bullet">geocaching tool</div>
             </div>
         </div>
-        <button class="link nav-content" data-nav="about">about</button>
+        <button class="link nav-content" data-nav="about">contact</button>
     </nav>
     <!------------------ MAIN ------------------>
     <div id="main" class="content selected">
 
         <h1>Looking for a web developer?</h1>
 
-        <!-- <img src="img/Portraitfoto.jpg" id="imgmbk"> -->
+        <img src="img/Portraitfoto.jpg" id="imgmbk">
 
-        <p>My name is Klaus Mistlberger, I'm an aspiring Software Engineer with a clear focus on JavaScript and NodeJS.</p>
+        <p>My name is Klaus Mistlberger, I'm a software engineer with a clear focus on JavaScript and NodeJS.</p>
         <p>I've been studying media technology at the University of applied Sciences in St. Pölten. During my studies I was fascinated by modern technologies and I've always been working with visual programming languages like MAX/MSP and VVVV but also learning JavaScript and a bit of Java.</p>
 
     </div>
@@ -41,26 +44,69 @@
 
         <div id="photografy" class="content-element">
             <h2>photografy</h2>
-            <p>photografy</p>
+            <h3>a platform for photography</h3>
+            <div class="project-container">
+                <div class="left">
+                    <p>Frontend + Backend</p>
+                    <p>GitLab CI/CD -> Heroku</p>
+                    <p>NodeJS / Express Server</p>
+                    <p>Rest API</p>
+                    <p>MongoDB Atlas</p>
+                    <p>Cloudinary Storage</p>
+                    <p>Nodemailer</p>
+                    <p>Axios</p>
+                
+                    <div class="external">
+                        <a href="http://photografy.herokuapp.com/index.html" target="_blank">to photografy</a>
+                    </div>
+                    <div class="external">
+                        <a href="https://gitlab.com/klausMistlberger/photography" target="_blank">GitLab repository</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="photografy1" class="sampleimageContainer">
+                        <!-- <img src="img/photografy/feed.JPG" class="sampleimage"> -->
+                    </div>
+                    <div id="photografy2" class="sampleimageContainer">
+                        <!-- <img src="img/photografy/account.JPG" class="sampleimage"> -->
+                    </div>
+                    <div id="photografy3" class="sampleimageContainer">
+                        <!-- <img src="img/photografy/menu.JPG" class="sampleimage"> -->
+                    </div>
+                    <div id="photografy4" class="sampleimageContainer">
+                        <!-- <img src="img/photografy/upload.JPG" class="sampleimage"> -->
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
         <div id="entwederoder" class="content-element">
             <h2>entweder-oder generator</h2>
-            <p>entweder oder</p>
+            <!-- <p>entweder oder</p> -->
         </div>
 
         <div id="geocaching" class="content-element">
-            <h2>geocaching translator</h2>
-            <p>geocaching</p>
+            <h2>geocache translator</h2>
+
         </div>
     </div>
 
     <!------------------ ABOUT ------------------>
     <div id="about" class="content">
         <h1>Contact</h1>
-        <form action="">
-            
-        </form>
+        <h3>Klaus Mistlberger</h3>
+        <p>
+            Louise-Martini-Weg 5/23 <br>
+            1030 Wien
+        </p>
+        <p>
+            mail: <a class="contact" href="mailto:klaus.mistlberger@pm.me">klaus.mistlberger@pm.me</a> <br>
+            tel: <a class="contact" href="tel:+436502908873">+43 650 290 88 73</a> <br>
+        </p>
+        <!-- <form action="">
+            <textarea name="" id=""></textarea>
+        </form> -->
     </div>
     
 </body>

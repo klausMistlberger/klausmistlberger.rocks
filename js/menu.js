@@ -6,14 +6,14 @@ document.addEventListener('click', ev => {
         let currentDropdown;
         if (isDropdownButton) {
             currentDropdown = element.closest('[data-dropdown]');
-            console.log(currentDropdown);
+            // console.log( currentDropdown );
             if (currentDropdown != null)
                 currentDropdown.classList.toggle('active');
         }
         ;
         // change dropdown menu
         document.querySelectorAll('[data-dropdown].active').forEach(dropdown => {
-            console.log(dropdown);
+            // console.log( dropdown );
             if (dropdown === currentDropdown)
                 return;
             dropdown.classList.remove('active');

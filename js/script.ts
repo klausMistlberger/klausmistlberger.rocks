@@ -75,6 +75,18 @@ const selectProject = (select: HTMLElement) => {
         projects.style.opacity = '1';
         sampleProject.style.display = 'initial';
         // sampleProject.classList.add( 'active' );
+        showSampleImage();
     };
 
+
 }; // selectProject()
+
+
+const showSampleImage = () => {
+    document.querySelectorAll( 'sampleimageContainer' ).forEach( el => {
+        console.log( el );
+        el.addEventListener( 'click', ev => {
+            console.log( el );
+        });
+    });
+};

@@ -26,15 +26,6 @@ body > div {
     margin: 0 auto;
 }
 
-/* #main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2em 1em;
-    max-width: 585px; 
-    margin: 0 auto;
-} */
-
 h1 {
     font-size: 24px;
     margin: 1em 1em; 
@@ -43,13 +34,20 @@ h1 {
 
 h2 {
     font-size: 21px;
-    margin: 1em 1em .3em 0em;
+    /* margin: 1em 1em .3em 0em; */
+    margin: 1em .3em;
+    text-align: center;
+}
+
+h3 {
+    margin: .3em 1em 1em;
+
     text-align: center;
 }
 
 p {
     margin: .3em 1em;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     /* text-align: justify; */
 }
@@ -163,6 +161,7 @@ p {
 
 .content-element {
     display: none;
+    margin: 0 auto;
 }
 
 #main {
@@ -171,7 +170,7 @@ p {
 }
 
 #projects {
-    opacity: 0;
+    /* opacity: 0; */
     display: none;
 }
 
@@ -179,3 +178,80 @@ p {
     /* opacity: 0; */
     display: none;
 }
+
+.contact {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#projects > div > p {
+    min-width: 280px;
+}
+
+.external {
+    font-size: 18px;
+    /* text-align: center; */
+    margin: .3em 1em;
+}
+
+.project-container {
+    display: flex;
+    min-width: 360px;
+    max-width: 585px;
+    /* flex-direction: row; */
+}
+
+.left {
+    flex: 7 1 0;
+    /* width: 60%; */
+    /* background-color: lightgreen; */
+}
+
+.right {
+    flex: 4 1 0;
+    /* width: 40%; */
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: column;
+}
+
+.sampleimageContainer {
+    aspect-ratio: 1 / 1;
+    width: 90%;
+    /* padding: 4px; */
+    margin: .5em auto;
+    /* background-color: aqua; */
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+}
+
+.sampleimage {
+    width: 40%;
+}
+
+#photografy1 {
+    background-image: url( '../img/photografy/feed.JPG' );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photografy2 {
+    background-image: url( '../img/photografy/account.JPG' );
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+#photografy3 {
+    background-image: url( '../img/photografy/upload.JPG' );
+    background-repeat: no-repeat;
+    background-size: 175%;
+}
+
+#photografy4 {
+    background-image: url( '../img/photografy//menu.JPG' );
+    background-repeat: no-repeat;
+    background-position: right 0px top 0px;
+    background-size: 225%;
+}
+
