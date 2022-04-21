@@ -101,6 +101,11 @@ p {
         align-self: center;
     }
 
+    .section {
+        top: 9em;
+    }
+    
+
     /* #dropdown-menu {
         left: calc( 25vw/2 );
     } */
