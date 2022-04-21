@@ -15,7 +15,6 @@ document.querySelectorAll( '.dropdown-menu > div' ).forEach( el => {
     }); // EvenListener
 }); // qSA
 
-
 const navContent = document.querySelectorAll<HTMLElement>( '.nav-content' );
 const content = document.querySelectorAll<HTMLElement>( '.content' );
 // console.log( navContent );
@@ -60,7 +59,6 @@ const selectProject = (select: HTMLElement) => {
     });
 
     document.querySelectorAll<HTMLElement>( '.content-element' ).forEach( el => {
-        // console.log( el.classList );
         if ( !el.classList.contains( 'selected' ) ) {
             el.style.display = 'none';
         };
@@ -75,18 +73,32 @@ const selectProject = (select: HTMLElement) => {
         projects.style.opacity = '1';
         sampleProject.style.display = 'initial';
         // sampleProject.classList.add( 'active' );
-        showSampleImage();
     };
-
-
 }; // selectProject()
 
+// sampleImage eventListener
+document.querySelectorAll( '.sampleimageContainer' ).forEach( el => {
+    el.addEventListener( 'click', ev => {
+        let src = el.getAttribute( 'data-url' );
+        if ( src != null ) {
+            let image = document.createElement( 'img' );
+            image.id = 'sampleimage';
+            image.src = src;
+            let imageoverlay = document.createElement( 'div' );
+            imageoverlay.id = 'imageoverlay';
+            imageoverlay.appendChild( image );
+            let closetext = document.createElement( 'div' );
+            closetext.id = 'closetext';
+            closetext.innerHTML = 'click to close';
+            imageoverlay.appendChild( closetext );
 
-const showSampleImage = () => {
-    document.querySelectorAll( 'sampleimageContainer' ).forEach( el => {
-        console.log( el );
-        el.addEventListener( 'click', ev => {
-            console.log( el );
-        });
+            let body = document.querySelector( 'body' );
+            body?.appendChild( imageoverlay );
+
+            imageoverlay.addEventListener( 'click', () => {
+                body?.removeChild( imageoverlay );
+            });
+        };
     });
-};
+});
+

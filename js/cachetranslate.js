@@ -19,7 +19,7 @@ const convert = () => {
             output += ' - ';
         } else {
             // console.log( literals[input[i]] );
-            output += ( literals[input[i]] + '' );
+            output += ( literals[ input[i] ].toString() );
             output += ' ';
         }
     }

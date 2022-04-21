@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaus Mistlberger</title>
-    <!-- <link rel="stylesheet" href="lib/bootstrap.min.css"> -->
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <script src="lib/jquery-3.6.0.min.js" defer></script>
     <script src="lib/myLib.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/cachetranslate.js" defer></script>
     <script src="js/script.js" defer></script>
-
 </head>
 <body>
     <nav id="navbar">
@@ -22,60 +21,49 @@
             <div class="dropdown-menu">
                 <div id="dD-photografy" class="dropdown-bullet">photografy</div>
                 <div id="dD-entwederoder" class="dropdown-bullet">entweder-oder</div>
-                <div id="dD-geocaching" class="dropdown-bullet">geocaching tool</div>
+                <div id="dD-geocaching" class="dropdown-bullet">geocache translator</div>
             </div>
         </div>
-        <button class="link nav-content" data-nav="about">contact</button>
+        <button class="link nav-content" data-nav="about">about</button>
     </nav>
     <!------------------ MAIN ------------------>
-    <div id="main" class="content selected">
+    <div id="main" class="content selected section">
 
         <h1>Looking for a web developer?</h1>
 
         <img src="img/Portraitfoto.jpg" id="imgmbk">
 
         <p>My name is Klaus Mistlberger, I'm a software engineer with a clear focus on JavaScript and NodeJS.</p>
-        <p>I've been studying media technology at the University of applied Sciences in St. Pölten. During my studies I was fascinated by modern technologies and I've always been working with visual programming languages like MAX/MSP and VVVV but also learning JavaScript and a bit of Java.</p>
+        <p>I've been studying media technology at the University of applied Sciences in St. Pölten. I was fascinated by modern technologies and I've always been working with visual programming languages like MAX/MSP and VVVV but also learning JavaScript and a bit of Java.</p>
+        <p>After my studies I've been working in a large viennese postproduction sound studio, but after a couple years, producing mainly commercials for TV, radio and web, I felt the urge to do something new.</p>
+        <p>So I started getting into deep with JavaScript and soon discovered NodeJS. Since then I've been programming almost every day, getting to know modern programming principles and practices. As of now I feel adequate to start working in web development.</p>
+        <p>Sounds interesting to you? Then check out my projects.</p>
 
     </div>
 
     <!------------------ PROJECTS ------------------>
-    <div id="projects" class="project-list">
+    <div id="projects" class="project-list section">
 
         <div id="photografy" class="content-element">
             <h2>photografy</h2>
             <h3>a platform for photography</h3>
             <div class="project-container">
-                <div class="left">
-                    <p>Frontend + Backend</p>
-                    <p>GitLab CI/CD -> Heroku</p>
-                    <p>NodeJS / Express Server</p>
-                    <p>Rest API</p>
-                    <p>MongoDB Atlas</p>
-                    <p>Cloudinary Storage</p>
-                    <p>Nodemailer</p>
-                    <p>Axios</p>
-                
+                <div class="top">
+                    <h4>Technologies</h4>
+                    <p class="project-tech">GitLab CI/CD, Heroku, NodeJS, Express, REST&nbsp;API, MongoDB&nbsp;Atlas, Cloudinary, Nodemailer, Axios, Bootstrap</p>
+
                     <div class="external">
-                        <a href="http://photografy.herokuapp.com/index.html" target="_blank">to photografy</a>
+                        <a href="http://photografy.herokuapp.com/index.html" target="_blank">-&gt; photografy &lt;-</a>
                     </div>
                     <div class="external">
-                        <a href="https://gitlab.com/klausMistlberger/photography" target="_blank">GitLab repository</a>
+                        <a href="https://gitlab.com/klausMistlberger/photography" target="_blank">-&gt; GitLab &lt;-</a>
                     </div>
                 </div>
-                <div class="right">
-                    <div id="photografy1" class="sampleimageContainer">
-                        <!-- <img src="img/photografy/feed.JPG" class="sampleimage"> -->
-                    </div>
-                    <div id="photografy2" class="sampleimageContainer">
-                        <!-- <img src="img/photografy/account.JPG" class="sampleimage"> -->
-                    </div>
-                    <div id="photografy3" class="sampleimageContainer">
-                        <!-- <img src="img/photografy/menu.JPG" class="sampleimage"> -->
-                    </div>
-                    <div id="photografy4" class="sampleimageContainer">
-                        <!-- <img src="img/photografy/upload.JPG" class="sampleimage"> -->
-                    </div>
+                <div class="bottom">
+                    <div id="photografy-sample1" class="sampleimageContainer" data-url="img/photografy/feed.JPG"></div>
+                    <div id="photografy-sample2" class="sampleimageContainer" data-url="img/photografy/account.JPG"></div>
+                    <div id="photografy-sample3" class="sampleimageContainer" data-url="img/photografy/upload.JPG"></div>
+                    <div id="photografy-sample4" class="sampleimageContainer" data-url="img/photografy/menu.JPG"></div>
                 </div>
             </div>
             
@@ -83,30 +71,62 @@
 
         <div id="entwederoder" class="content-element">
             <h2>entweder-oder generator</h2>
-            <!-- <p>entweder oder</p> -->
+            <h3>a decision-making tool</h3>
+            <div class="project-container">
+                <div class="top">
+                    <h4>Technologies</h4>
+                    <p class="project-tech">jQuery, Bootstrap</p>
+
+                    <div class="external">
+                        <a href="https://klausmistlberger.rocks/entweder-oder.html" target="_blank">-&gt; entweder - oder &lt;-</a>
+                    </div>
+                    <div class="external">
+                        <a href="https://github.com/klausMistlberger/entwederOder" target="_blank">-&gt; GitHub &lt;-</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div id="eo-sample1" class="sampleimageContainer" data-url="img/eo/eo1.JPG"></div>
+                    <div id="eo-sample2" class="sampleimageContainer" data-url="img/eo/eo2.JPG"></div>
+                </div>
+            </div>
         </div>
 
         <div id="geocaching" class="content-element">
             <h2>geocache translator</h2>
+            <h3>calculating strings to numbers</h3>
+            <div class="project-container">
+                <div class="top">
+                    <h4>Technologies</h4>
+                    <p class="project-tech">jQuery, Bootstrap</p>
 
+                    <div class="external">
+                        <a href="https://klausmistlberger.rocks/cachetranslate.html" target="_blank">-&gt; entweder - oder &lt;-</a>
+                    </div>
+                    <div class="external">
+                        <a href="https://github.com/klausMistlberger/geocachetranslator" target="_blank">-&gt; GitHub &lt;-</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div id="gct-sample1" class="sampleimageContainer" data-url="img/gct/gct1.JPG"></div>
+                    <div id="gct-sample2" class="sampleimageContainer" data-url="img/gct/gct2.JPG"></div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!------------------ ABOUT ------------------>
-    <div id="about" class="content">
-        <h1>Contact</h1>
-        <h3>Klaus Mistlberger</h3>
-        <p>
+    <div id="about" class="content section">
+        <h2>Contact</h2>
+        <address>
+            <h3>Klaus Mistlberger</h3>
             Louise-Martini-Weg 5/23 <br>
-            1030 Wien
-        </p>
-        <p>
+            A - 1030 Wien
+        </address>
+        <address>
             mail: <a class="contact" href="mailto:klaus.mistlberger@pm.me">klaus.mistlberger@pm.me</a> <br>
             tel: <a class="contact" href="tel:+436502908873">+43 650 290 88 73</a> <br>
-        </p>
-        <!-- <form action="">
-            <textarea name="" id=""></textarea>
-        </form> -->
+        </address>
+        <div><a href="https://github.com/klausMistlberger/klausmistlberger.rocks">GitHub repo for this page</a></div>
     </div>
     
 </body>
