@@ -22,9 +22,9 @@ body {
     /* margin-top: 2em;  */
     position: relative;
     top: 4em;
-    margin: 2em 1em;
-    max-width: 585px; 
     margin: 0 auto;
+    max-width: 585px; 
+    /* margin: 0 auto 1em; */
 }
 
 h1 {
@@ -57,6 +57,10 @@ p {
     /* text-align: justify; */
 }
 
+#lastp {
+    margin-bottom: 2em;
+}
+
 /* #main img {
     margin: 0 auto; 
     text-align: center;
@@ -86,6 +90,7 @@ p {
     justify-content: space-evenly;
     flex-wrap: wrap;
 
+    color: black; 
     background-color: var(--color1);
 }
 
@@ -93,7 +98,6 @@ p {
     #navbar {
         flex-direction: column;
         justify-content: center;
-
     }
 
     .dropdown {
@@ -103,7 +107,6 @@ p {
 
     .section {
         top: 9em;
-        color: black;
     }
     
 
